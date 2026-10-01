@@ -19,19 +19,5 @@
     "grade": "A",
     "semester": 1,
     "status": "กรอกแล้ว"
-  },
-  {
-    "subject": "อังกฤษ",
-    "credit": 3,
-    "grade": "A",
-    "semester": 1,
-    "status": "กรอกแล้ว"
-  },
-  {
-    "subject": "ชีวะ",
-    "credit": 3,
-    "grade": "A",
-    "semester": 1,
-    "status": "กรอกแล้ว"
   }
 ]
