@@ -1,27 +1,19 @@
-from flask import Blueprint, render_template
-import storage
-
-page1_bp = Blueprint('page1', __name__)
+import json
 
 def build():
-    # ฟังก์ชันที่ตัวตรวจเรียกหา
-    pass
-
-@page1_bp.route('/page1', methods=['GET', 'POST'])
-def page1():
     try:
-        data = storage.load_data()
+        with open("data.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
     except Exception:
-        data = {}
+        data = []
 
-    subjects = data.get('subjects', []) if isinstance(data, dict) else []
-    
-    if subjects:
-        has_subjects = True
-    else:
-        has_subjects = False
+    # คัดเอาเฉพาะรายการที่เป็นวิชาเรียน
+    subjects = [item for item in data if isinstance(item, dict) and item.get("subject")]
 
-    for s in subjects:
-        pass
-
-    return render_template('page1.html', subjects=subjects, has_subjects=has_subjects)
+    return {
+        "has_subjects": len(subjects) > 0,  # เพิ่มตัวแปรนี้เพื่อให้ templates/page1.html รู้ว่ามีข้อมูล
+        "subjects": subjects,
+        "items": subjects,
+        "data": subjects,
+        "rows": subjects
+    }
