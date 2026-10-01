@@ -19,5 +19,19 @@
     "grade": "A",
     "semester": 1,
     "status": "กรอกแล้ว"
+  },
+  {
+    "subject": "อังกฤษ",
+    "credit": 3,
+    "grade": "A",
+    "semester": 2,
+    "status": "กรอกแล้ว"
+  },
+  {
+    "subject": "อังกฤษ",
+    "credit": 3,
+    "grade": "B+",
+    "semester": 2,
+    "status": "กรอกแล้ว"
   }
 ]
