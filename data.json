@@ -1,37 +1,7 @@
 [
-  {
-    "subject": "ชีวะ",
-    "credit": 3,
-    "grade": "A",
-    "semester": 1,
-    "status": "กรอกแล้ว"
-  },
-  {
-    "subject": "คณิตศาสตร์",
-    "credit": 3,
-    "grade": "A",
-    "semester": 1,
-    "status": "กรอกแล้ว"
-  },
-  {
-    "subject": "เคมี",
-    "credit": 3,
-    "grade": "A",
-    "semester": 1,
-    "status": "กรอกแล้ว"
-  },
-  {
-    "subject": "อังกฤษ",
-    "credit": 3,
-    "grade": "A",
-    "semester": 2,
-    "status": "กรอกแล้ว"
-  },
-  {
-    "subject": "อังกฤษ",
-    "credit": 3,
-    "grade": "B+",
-    "semester": 2,
-    "status": "กรอกแล้ว"
-  }
+  {"name": "Multimeter", "category": "measure", "qty": 12, "price": 850},
+  {"name": "Oscilloscope", "category": "measure", "qty": 4, "price": 25000},
+  {"name": "Arduino Uno", "category": "board", "qty": 30, "price": 390},
+  {"name": "Breadboard", "category": "tool", "qty": 40, "price": 60},
+  {"name": "Soldering iron", "category": "tool", "qty": 10, "price": 450}
 ]
